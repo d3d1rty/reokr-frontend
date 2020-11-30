@@ -1,5 +1,17 @@
 {
   "footer": {
-    "home-link": "Home"
+    "home-link-text": "Home",
+    "sign-up-link-text": "Sign up",
+    "login-link-text": "Login",
+    "credit-text": "Made with ❤️ by",
+    "company-name": "Mushaka Solutions",
+    "copyright-statement": "©️ Copyright 2020"
+  },
+  "navbar": {
+    "brand-name": "ReOKR",
+    "home-link-text": "Home",
+    "sign-up-link-text": "Sign up",
+    "login-link-text": "Login",
+    "logout-link-text": "Logout"
   }
 }

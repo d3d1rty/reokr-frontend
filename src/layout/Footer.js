@@ -1,5 +1,6 @@
 import React from 'react';
 import { Translation } from 'react-i18next';
+import { Link } from "react-router-dom";
 import logo from './footer-logo.svg';
 
 class Footer extends React.Component {
@@ -10,23 +11,23 @@ class Footer extends React.Component {
           (t, { i18n }) =>
           <footer className="Footer">
             <div className="Footer__link-list">
-              <a className="Footer__link Link--dark" href="/">{t('footer.home-link')}</a>
-              <a className="Footer__link Link--dark" href="/">Sign up</a>
-              <a className="Footer__link Link--dark" href="/">Log in</a>
+              <Link className="Link--dark Footer__link" to="/">{t('footer.home-link-text')}</Link>
+              <Link className="Link--dark Footer__link" to="/sign-up">{t('footer.sign-up-link-text')}</Link>
+              <Link className="Link--dark Footer__link" to="/login">{t('footer.login-link-text')}</Link>
             </div>
             <div className="Footer__brand-ribbon">
               <img src={logo} className="Footer__logo u-Image--responsive" alt="logo" />
               <p className="Footer__copyright">
-                Made with ❤️ by&nbsp;
+                {t('footer.credit-text')}
                 <a
                   className="Link--primary"
                   href="https://mushaka.solutions"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Mushaka Solutions
+                  &nbsp;{t('footer.company-name')}&nbsp;
                 </a>
-                &nbsp;&copy; Copyright 2020
+                {t('footer.copyright-statement')}
               </p>
             </div>
           </footer>
